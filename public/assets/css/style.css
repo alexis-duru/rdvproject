@@ -1,41 +1,107 @@
 * {
     margin: 0px;
 }
+nav {
+    height: 70px; 
+    width: 100vw;
+    display: flex;
+}
 
-.lien_homepage {
+#container-nav {
+    display: flex;
+    letter-spacing: 6px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>#container-nav>p {
     font-size: 2rem;
-    transform: scale(1);
-    transition: 0.8s;
-    color: white;
-    border: 3px solid black;
-    padding: 20px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 8px;
+}
+
+
+#container-nav ul {
+    width: 70%;
+    height: auto;
     text-decoration: none;
-    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
 }
 
-.lien_homepage:hover {
-    font-size: 2rem;
-    transform: scale(1.1);
-    background-color: white;
-    opacity: 0.7;
+#container-nav>ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-nav>ul>li>a {
+    text-decoration: none;
     color: black;
+    transform: scale(0.98);
+    transition: 0.5s;
 }
 
+#container-nav>ul>li>a:hover {
+    border-bottom: 1px solid black;
+    opacity: 0.7;
+    transform: scale(1);
+    
+}
 
-
-.section {
+.section-homepage {
+    width: 100vw;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;  
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/backgroundhomepage.jpg');
+    background-color: rgba(4, 3, 7, 0.612);
+    background-blend-mode: overlay;
+    opacity: 0.9;
     background-size: cover;
 }
 
-.section-homepage {
+.container-homepage {
     height:100vh;
     width: auto;
     display: flex;
+    align-items: center;
+}
+
+.section-homepage>.container-homepage>a {
+    font-size: 1.3rem;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(227, 208, 173);
+    padding: 15px 30px;
+    transform: scale(1);
+    transition: 0.8s;
+    letter-spacing: 8px;
+}
+
+.container-homepage>a:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+footer {
+    height: 50px;
+    width: 100vw;
+    background-color: white;
+}
+
+footer>p {
+    font-size: 1rem;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+
 }
