@@ -3,13 +3,16 @@ footer {
     width: 100vw;
     background-color: white;
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 400;
-        letter-spacing: 7px;
+        letter-spacing: 8px;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
+        #copyright {
+            font-size: 15px;
         }
+    }
 }
