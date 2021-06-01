@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-homepage {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-image: url('../../public/assets/img/backgroundhomepage.jpg');
+    background-color: rgba(4, 3, 7, 0.612);
+    background-blend-mode: overlay;
+    opacity: 0.9;
+    background-size: cover;
+    .container-homepage {
+        height:100vh;
+        width: auto;
+        display: flex;
+        align-items: center;
+        a {
+            font-size: 1.3rem;
+            border: 1px solid rgb(255, 255, 255);
+            color: rgb(227, 208, 173);
+            padding: 15px 30px;
+            transform: scale(1);
+            transition: 0.8s;
+            letter-spacing: 8px;
+            &:hover {
+                transform: scale(1.1);
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}

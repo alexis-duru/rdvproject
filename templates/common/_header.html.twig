@@ -1,22 +1,41 @@
+{% if not app.user %}
 <nav>
   <div id="container-nav">
     <p>RDV PROJECT</p>
     <ul>
       <li>
-        <a href="#">HOME</a>
+        <a href="{{path('app_homepage')}}">HOME</a>
       </li>
       <li>
         <a href="#">APPOINTMENT</a>
       </li>
       <li>
-        <a href="#">SIGN IN / SIGN UP</a>
-      </li>
-      <li>
-        <a href="#">PROFIL</a>
-      </li>
-      <li>
-        <a href="#">CONTACTS</a>
+       <a href="{{path('app_login')}}">SIGN IN</a> / <a href="{{path('app_register')}}">SIGN UP</a>
       </li>
     </ul>
   <div>
 </nav>
+{% else %}
+<nav>
+  <div id="container-nav">
+    <p>RDV PROJECT</p>
+    <ul>
+      <li>
+        <a href="{{path('app_homepage')}}">HOME</a>
+      </li>
+      <li>
+       {# <a href="{{path('app_profil')}}"></a> #}
+       <a href="{{path('app_logout')}}">DISCONNECT</a>
+      </li>
+    </ul>
+  <div>
+</nav>
+{% endif %}
+
+
+ {# <li>
+        <a href="#">PROFIL</a>
+      </li>
+      <li>
+        <a href="#">CONTACTS</a>
+      </li> #}
