@@ -13,7 +13,7 @@ p, a {
     justify-content: center;
     align-items: center;  
     background-image: url('../../public/assets/img/backgroundhomepage.jpg');
-    background-color: rgba(4, 3, 7, 0.612);
+    background-color: rgba(4, 3, 7, 0.639);
     background-blend-mode: overlay;
     opacity: 0.9;
     background-size: cover;
@@ -22,6 +22,8 @@ p, a {
         width: auto;
         display: flex;
         align-items: center;
+        flex-direction: column;
+        justify-content: center;
         a {
             font-size: 1.3rem;
             border: 1px solid rgb(255, 255, 255);
@@ -32,10 +34,50 @@ p, a {
             letter-spacing: 8px;
             text-decoration: none;
             border-radius: 10px;
+            z-index: 50;
+            position: absolute;
             &:hover {
                 transform: scale(1.1);
                 background-color: white;
                 color: black;
+            }
+        }
+        #caroussel {
+            width: 640px;
+            overflow: hidden;
+            border: 3px solid black;
+            z-index: 0;
+            position: relative;
+            // border-radius: 50px;
+
+        }
+        
+        .images {
+            display: flex;
+            animation-duration: 13s;
+            animation-name: mesImages;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes mesImages {
+            0% {
+                transform: translateX(0);
+            }
+        
+            25% {
+                transform: translateX(-640px);
+            }
+        
+            50% {
+                transform: translateX(-1280px);
+            }
+        
+            75% {
+                transform: translateX(-1920px);
+            }
+        
+            100%{
+                transform: translateX(0);
             }
         }
     }
