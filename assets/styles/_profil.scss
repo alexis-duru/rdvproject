@@ -41,21 +41,44 @@
             flex-direction: column;
             align-items: center;
             border: 0.4px solid rgba(0, 0, 0, 0.256);
-            border-bottom: 0px;
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                input, label {
+                width: auto;
+                height: auto;
+                padding: 20px;
+                border: 0px;
+                font-family: 'Montserrat', sans-serif;
+                }
+                input {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+                height: 10px;
+                padding: 20px;
+                outline: none;
+                font-family: 'Montserrat', sans-serif;
+                padding-bottom: 14px;
+                font-size: 18px;
+
+                }
+                
+            }
             .btn-confirm {
                 padding: 15px;
                 display: flex;
                 align-items: center;
                 font-size: 0.5rem;
                 margin-bottom: 20px;
+                margin-top: 20px;
                 transform: scale(1);
                 transition: 0.5s;
-                border: 1px solid black;
                 text-transform: uppercase;
                 background-color: black;
                 letter-spacing: 5px;
-                width: 130px;
-                height: 40px;
+                width: 110px;
+                height: 35px;
                 color: white;
                 border-radius: 30px;
                 text-align: center;
@@ -63,14 +86,17 @@
                     &:hover {
                     transform: scale(1.06);
                     opacity: 1;
+
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
                 }
             }
             p {
                 width: auto;
                 height: auto;
                 padding: 20px;
-                border-radius: 50px;
-                font-weight: bold;
                 i {
                     width: 20px;
                     height: 20px;

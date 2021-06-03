@@ -2,6 +2,13 @@ footer {
     height: 50px;
     width: 100vw;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
     p {
         font-size: 1.5rem;
         font-weight: 400;
@@ -14,5 +21,10 @@ footer {
         #copyright {
             font-size: 15px;
         }
+    }
+    div {
+        width: 150px;
+        display: flex;
+        justify-content: space-around;
     }
 }
