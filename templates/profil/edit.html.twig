@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}EDIT PROFIL{% endblock %}
+
+{% block body %}
+<section class="section-profil">
+    <div class="container-profil">
+            <img src="../assets/img/persona.jpg">
+            <h2>{{ app.user.username }}</h2>
+            <div class="infos">
+                <p>CONTACT</p>
+                <p><i class="fas fa-envelope"></i> E-mail : {{ app.user.email }}</p>
+                <p><i class="fas fa-phone"></i> Phone : {{ app.user.phoneNumber }}</p>
+            <div class="infos">
+    </div>
+</section>
+{% endblock %}
