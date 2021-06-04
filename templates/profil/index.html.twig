@@ -9,8 +9,8 @@
         <h2>{{ app.user.username }}</h2>
         <div class="infos">
             <p>CONTACT</p>
-            <p><i class="fas fa-envelope"></i> E-mail : {{ app.user.email }}</p>
-            <p><i class="fas fa-phone"></i> Phone : {{ app.user.phoneNumber }}</p>
+            <p><i class="fas fa-envelope"></i> E-mail : <span>{{ app.user.email }}</span></p>
+            <p><i class="fas fa-phone"></i> Phone : <span>{{ app.user.phoneNumber }}</span></p>
             <button class="btn-confirm"><a href="{{path('app_profil_edit')}}">EDIT</a></button>
         </div>
     </div>
